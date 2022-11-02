@@ -1,0 +1,112 @@
+.degradado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    transition: ease-in-out .5s;
+}
+
+.degradado.activo{
+    opacity: 1;
+}
+
+.hamburger{
+    outline: none;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+    display: none;
+}
+
+.hamburger .hamburger-inner, .hamburger .hamburger-inner::after, .hamburger .hamburger-inner::before{
+    background: $gris;
+}
+
+.hamburger:hover .hamburger-inner, .hamburger:hover .hamburger-inner::after, .hamburger:hover .hamburger-inner::before{
+    background: $azul;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before{
+    background: $gris;
+}
+
+.hamburger.is-active:hover .hamburger-inner, .hamburger.is-active:hover .hamburger-inner::after, .hamburger.is-active:hover .hamburger-inner::before{
+    background: $azul;
+}
+
+.menu-movil{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 100vh;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+    background: $blanco;
+    z-index: 800;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -100%;
+    display: none;
+    transition: ease-in-out .5s;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        li{
+            width: 100%;
+            a{
+                display: inline-block;
+                width: 100%;
+                padding: 15px 0;
+                text-decoration: none;
+                color: $gris;
+                font-weight: $bold;
+                font-size: 1.3rem;
+                transition: ease-in-out .15s;
+                &:hover{
+                    color: $azul;
+                }
+            }
+        }
+    }
+    img{
+        width: 50%;
+        transform: translate(-40px);
+    }
+}
+
+.menu-movil.activo{
+    margin-left: 0;
+}
+
+@media only screen and(max-width: 800px){
+    .hamburger{
+        display: inline-block;
+    }
+    .menu-movil{
+        display: flex;
+    }
+}
+
+@media only screen and(max-width: 500px){
+    .menu-movil{
+        img{
+            width: 75%;
+        }
+    }
+}

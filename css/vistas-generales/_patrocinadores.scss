@@ -1,0 +1,129 @@
+@import '../variables';
+
+.patrocinadores{
+    background: $gris1;
+    h2{
+        text-transform: uppercase;
+        color: $gris;
+        font-size: 3rem;
+        text-align: center;
+        padding: 60px 0;
+    }
+    .uno{
+        background: $gris2;
+    }
+    .dos{
+        background: $gris1;
+    }
+    .categoria{
+        padding: 60px 0;
+        h3{
+            color: $azul;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .elementos{
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .caja{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+                .logo{
+                    border: 1px solid $bordes;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+                    transition: ease-in-out .25s;
+                    &:hover img{
+                        opacity: 1;
+                    }
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                        opacity: .9;
+                        transition: ease-in-out .25s;
+                    }
+                }
+            }
+        }
+    }
+    .premium{
+        .elementos{
+            .caja{
+                width: 270px;
+                height: 270px;
+                .logo{
+                    width: 250px;
+                    height: 250px;
+                    &:hover{
+                        width: 270px;
+                        height: 270px;
+                    }
+                }
+            }
+        }
+    }
+    .oro{
+        .elementos{
+            .caja{
+                width: 250px;
+                height: 250px;
+                .logo{
+                    width: 230px;
+                    height: 230px;
+                    &:hover{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .plata{
+        .elementos{
+            .caja{
+                width: 220px;
+                height: 220px;
+                .logo{
+                    width: 200px;
+                    height: 200px;
+                    &:hover{
+                        width: 220px;
+                        height: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .coctel{
+        .elementos{
+            .caja{
+                width: 190px;
+                height: 190px;
+                .logo{
+                    width: 170px;
+                    height: 170px;
+                    &:hover{
+                        width: 190px;
+                        height: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 550px){
+    .patrocinadores{
+        h2{
+            font-size: 2rem;
+        }
+    }
+}

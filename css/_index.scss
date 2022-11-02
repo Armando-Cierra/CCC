@@ -1,0 +1,111 @@
+@import 'variables';
+.info{
+    width: 100%;
+    .objetivo{
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+            width: 100%;
+            max-width: 1100px;
+            color: $gris;
+            font-size: 1.5rem;
+        }
+    }
+    .horario{
+        width: 100%;
+        background: url("../img/informacion/barra-lugar.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position-x: left;
+        padding: 60px;
+        margin-bottom: 20px;
+        h2{
+            color: $blanco;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $blanco;
+            font-size: 1.2rem;
+        }
+    }
+    .tarifa{
+        width: 100%;
+        background: url("../img/informacion/barra-precio.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position-x: right;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        h2{
+            color: $blanco;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $blanco;
+            font-size: 1.2rem;
+            text-align: right;
+        }
+    }
+}
+
+@media only screen and(max-width: 800px){
+    .info{
+        .objetivo{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .horario{
+            h2{
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .tarifa{
+            h2{
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 550px){
+    .info{
+        .objetivo{
+            p{
+                font-size: 1rem;
+            }
+        }
+        .horario{
+            padding: 60px 20px;
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .tarifa{
+            padding: 60px 20px;
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

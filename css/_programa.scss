@@ -1,0 +1,59 @@
+@import 'variables';
+
+.info{
+    .agenda{
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 20px;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+                padding: 20px;
+                vertical-align: baseline;
+                td{
+                    padding: 10px 0;
+                    border-bottom: 1px solid $bordes;
+                    color: $gris;
+                    &:first-child{
+                        font-weight: $bold;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 750px){
+    .info{
+        .agenda{
+            table{
+                tr{
+                    td{
+                        &:first-child{
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 550px){
+    .info{
+        .agenda{
+            table{
+                tr{
+                    td{
+                        &:first-child{
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

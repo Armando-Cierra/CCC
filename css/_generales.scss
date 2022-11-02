@@ -1,0 +1,27 @@
+@import 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $roboto;
+    font-size: 1.1rem;
+    p{
+        line-height: 1.5;
+    }
+}
+
+*::selection{
+    background: $azul;
+    color: $blanco;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.gradiente{
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to right, $azul, $azul-osc);
+}
