@@ -8,6 +8,7 @@
 ### Project Description
 
 HTML and SCSS template done for Cámara Costarricense de la Construcción.
+
 **Year:** 2019
 
 ---
